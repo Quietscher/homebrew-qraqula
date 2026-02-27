@@ -5,21 +5,21 @@
 class Qla < Formula
   desc "All-in-one TUI GraphQL client"
   homepage "https://github.com/Quietscher/qraqula"
-  version "1.1.1"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Quietscher/qraqula/releases/download/1.1.1/qla_darwin_amd64.tar.gz"
-      sha256 "0ee98266b51182b3ef1753fdf6991dbaaeba4339f15207bc1a3a1e1554991435"
+      url "https://github.com/Quietscher/qraqula/releases/download/1.1.2/qla_darwin_amd64.tar.gz"
+      sha256 "f866ae10559b62afdacf60d1236dcf79f95f85d1e331fa6e1485084c8b9aae3f"
 
       define_method(:install) do
         bin.install "qla"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Quietscher/qraqula/releases/download/1.1.1/qla_darwin_arm64.tar.gz"
-      sha256 "e7fc27b5e745df7537c0add899caab4870b52f40851fa43e888b2e314d331609"
+      url "https://github.com/Quietscher/qraqula/releases/download/1.1.2/qla_darwin_arm64.tar.gz"
+      sha256 "d93c885c15f413676fd312c492d057d2b9fbabe959172f1a92b8d911b9ed0542"
 
       define_method(:install) do
         bin.install "qla"
@@ -29,15 +29,15 @@ class Qla < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/qraqula/releases/download/1.1.1/qla_linux_amd64.tar.gz"
-      sha256 "000a689e9ec5252c2ac309babe885d1925d4ff8288ebd11b25d710408aa2df28"
+      url "https://github.com/Quietscher/qraqula/releases/download/1.1.2/qla_linux_amd64.tar.gz"
+      sha256 "b6982770466083365414fab12b7a6af63fcfab3f80a3451450709c07a11ad87e"
       define_method(:install) do
         bin.install "qla"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/qraqula/releases/download/1.1.1/qla_linux_arm64.tar.gz"
-      sha256 "a74ddc99001cb23c8191a8b1d93957c93d752f8480a93a046fdc6e5039ed1272"
+      url "https://github.com/Quietscher/qraqula/releases/download/1.1.2/qla_linux_arm64.tar.gz"
+      sha256 "4708fcbc2d243b682f9e0d2bdb6a4663826576d332f63b14ce06f6685b48d05a"
       define_method(:install) do
         bin.install "qla"
       end
